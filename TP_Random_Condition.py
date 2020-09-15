@@ -52,7 +52,8 @@ while continuer :
         print("Vous obtenez", mise * 2, "€ !")
         argent += mise * 2
 # Sinon si même couleur
-    elif numero_gagnant % 2 == nombre_mise % 2: 
+    elif numero_gagnant % 2 == nombre_mise % 2:
+        #Arrondir la somme via la fonction ceil
         mise = ceil(mise * 0.5)
         print("Bonne couleur. Vous obtenez", mise, "€ !")
         argent += mise
